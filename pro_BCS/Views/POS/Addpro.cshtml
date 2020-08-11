@@ -1,0 +1,295 @@
+﻿
+@{
+    ViewBag.Title = "Addpro";
+}
+
+ // <?php session_start();
+
+// include "connect.php";
+
+
+
+// if(isset($_POST['pname']))
+// {
+	// $pname=$_POST['pname'];
+	// $oprice=$_POST['oprice'];
+	// $sprice=$_POST['sprice'];
+	// $dd=date('Y-m-d');
+	// $sql = "INSERT INTO products (product_name,o_price,price,date_arrival)
+     // VALUES ('$pname','$oprice','$sprice','$dd')";
+
+
+
+// if ($db->query($sql) === TRUE) {
+    // echo "
+<script>alert('your data is saved')</script>";
+// }
+
+// else {
+    // echo "Error creating database: " . $db->error;
+
+       // }
+
+	// }
+
+
+// ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8" />
+    <title>Bismillah Commission Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="shortcut icon" href="assets/images/favicon_1.ico">
+
+    <!-- Custom Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+    <script src="assets/js/modernizr.min.js"></script>
+
+</head>
+
+
+<body class="fixed-left">
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <!-- Top Bar Start -->
+        <div class="topbar">
+            <!-- LOGO -->
+            <div class="topbar-left">
+                <div class="text-center">
+                    <a href="dashboard.php" class="logo">
+                        <i class="md md-terrain"></i> <span>
+                            // <?php $_SESSION['SESS_FIRST_NAME'];?>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <!-- Button mobile view to collapse sidebar menu -->
+            // <?php include "nav.php";?>
+        </div>
+        <!-- Top Bar End -->
+        <!-- ========== Left Sidebar Start ========== -->
+        // <?php include 'menu.php'; ?>
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container-fluid">
+
+                    <!-- Page-Title -->
+                    <!-- Form-validation -->
+                    <div class="row">
+
+                        <div class="col-sm-12">
+                            <div class="card">
+                                <div class="card-header"><h3 class="card-title">Add products</h3></div>
+                                <div class="card-body">
+                                    <div class="form">
+                                        <form class="cmxform form-horizontal tasi-form" method="post" action="" novalidate="novalidate">
+                                            <div class="form-group row">
+                                                <label for="firstname" class="control-label col-lg-2">Product Name</label>
+                                                <div class="col-lg-10">
+                                                    <input class="form-control" name="pname" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="lastname" class="control-label col-lg-2">Original Price</label>
+                                                <div class="col-lg-10">
+                                                    <input class="form-control" name="oprice" type="number">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="username" class="control-label col-lg-2">Selling Price</label>
+                                                <div class="col-lg-10">
+                                                    <input class="form-control" name="sprice" type="number">
+                                                </div>
+                                            </div>
+
+
+
+
+                                            <div class="form-group">
+                                                <div class="offset-lg-2 col-lg-10">
+                                                    <button class="btn btn-success " type="submit">Save</button>
+
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div> <!-- .form -->
+
+                                </div> <!-- card-body -->
+                            </div> <!-- card -->
+                        </div> <!-- col -->
+
+                    </div> <!-- End row -->
+
+
+
+                </div> <!-- container -->
+
+            </div> <!-- content -->
+            // <?php include "footer.php"; ?>
+
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Right content here -->
+        <!-- ============================================================== -->
+        <!-- Right Sidebar -->
+        <div class="side-bar right-bar nicescroll">
+            <h4 class="text-center">Chat</h4>
+            <div class="contact-list nicescroll">
+                <ul class="list-group contacts-list">
+                    <li class="list-group-item">
+                        <a href="#">
+                            <div class="avatar">
+                                <img src="assets/images/users/avatar-1.jpg" alt="">
+                            </div>
+                            <span class="name">Chadengle</span>
+                            <i class="fa fa-circle online"></i>
+                        </a>
+                        <span class="clearfix"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">
+                            <div class="avatar">
+                                <img src="assets/images/users/avatar-2.jpg" alt="">
+                            </div>
+                            <span class="name">Tomaslau</span>
+                            <i class="fa fa-circle online"></i>
+                        </a>
+                        <span class="clearfix"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">
+                            <div class="avatar">
+                                <img src="assets/images/users/avatar-3.jpg" alt="">
+                            </div>
+                            <span class="name">Stillnotdavid</span>
+                            <i class="fa fa-circle online"></i>
+                        </a>
+                        <span class="clearfix"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">
+                            <div class="avatar">
+                                <img src="assets/images/users/avatar-4.jpg" alt="">
+                            </div>
+                            <span class="name">Kurafire</span>
+                            <i class="fa fa-circle online"></i>
+                        </a>
+                        <span class="clearfix"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">
+                            <div class="avatar">
+                                <img src="assets/images/users/avatar-5.jpg" alt="">
+                            </div>
+                            <span class="name">Shahedk</span>
+                            <i class="fa fa-circle away"></i>
+                        </a>
+                        <span class="clearfix"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">
+                            <div class="avatar">
+                                <img src="assets/images/users/avatar-6.jpg" alt="">
+                            </div>
+                            <span class="name">Adhamdannaway</span>
+                            <i class="fa fa-circle away"></i>
+                        </a>
+                        <span class="clearfix"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">
+                            <div class="avatar">
+                                <img src="assets/images/users/avatar-7.jpg" alt="">
+                            </div>
+                            <span class="name">Ok</span>
+                            <i class="fa fa-circle away"></i>
+                        </a>
+                        <span class="clearfix"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">
+                            <div class="avatar">
+                                <img src="assets/images/users/avatar-8.jpg" alt="">
+                            </div>
+                            <span class="name">Arashasghari</span>
+                            <i class="fa fa-circle offline"></i>
+                        </a>
+                        <span class="clearfix"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">
+                            <div class="avatar">
+                                <img src="assets/images/users/avatar-9.jpg" alt="">
+                            </div>
+                            <span class="name">Joshaustin</span>
+                            <i class="fa fa-circle offline"></i>
+                        </a>
+                        <span class="clearfix"></span>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#">
+                            <div class="avatar">
+                                <img src="assets/images/users/avatar-10.jpg" alt="">
+                            </div>
+                            <span class="name">Sortino</span>
+                            <i class="fa fa-circle offline"></i>
+                        </a>
+                        <span class="clearfix"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /Right-bar -->
+
+
+    </div>
+    <!-- END wrapper -->
+
+    <script>
+            var resizefunc = [];
+    </script>
+
+    <!-- Main  -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/detect.js"></script>
+    <script src="assets/js/fastclick.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/jquery.blockUI.js"></script>
+    <script src="assets/js/waves.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.nicescroll.js"></script>
+    <script src="assets/js/jquery.scrollTo.min.js"></script>
+
+    <!--form validation-->
+    <script src="../plugins/jquery-validation/dist/jquery.validate.min.js"></script>
+
+    <!--form validation init-->
+    <script src="assets/pages/form-validation-init.js"></script>
+
+    <script src="assets/js/jquery.app.js"></script>
+
+
+</body>
+
+<!-- Mirrored from coderthemes.com/moltran/dark/form-validation.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Feb 2019 21:44:54 GMT -->
+</html>
+

@@ -1,0 +1,100 @@
+﻿
+@{
+    ViewBag.Title = "Leftmenu";
+}
+
+  // <?php  ?>
+
+<div class="left side-menu">
+    <div class="sidebar-inner slimscrollleft">
+        <div class="user-details">
+            <div class="pull-left">
+                <img src="assets/images/users/avatar-1.jpg" alt="" class="thumb-md rounded-circle">
+            </div>
+            <div class="user-info">
+                <div class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        // <?php 	echo $_SESSION['SESS_MEMBER_user'];?>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:void(0)" class="dropdown-item"><i class="md md-face-unlock mr-2"></i> Profile<div class="ripple-wrapper"></div></a></li>
+                        <li><a href="javascript:void(0)" class="dropdown-item"><i class="md md-settings mr-2"></i> Settings</a></li>
+                        <li><a href="javascript:void(0)" class="dropdown-item"><i class="md md-lock mr-2"></i> Lock screen</a></li>
+                        <li><a href="logout.php" class="dropdown-item"><i class="md md-settings-power mr-2"></i> Logout</a></li>
+                    </ul>
+                </div>
+
+                <p class="text-muted m-0">
+                    // <?php 	echo $_SESSION['SESS_LAST_NAME'];?>
+                </p>
+            </div>
+        </div>
+        <!--- Divider -->
+        <div id="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="dashboard.php" class="waves-effect"><i class="md md-home"></i><span> Dashboard </span></a>
+
+
+
+                <li>
+                    <a href="product.php" class="waves-effect"><i class="md md-event"></i><span> Products </span></a>
+                </li>
+
+                <li>
+                    <a href="customer.php" class="waves-effect"><i class="md md-event"></i><span> Customers </span></a>
+                </li>
+                <li>
+                    <a href="suplier.php" class="waves-effect"><i class="md md-event"></i><span> Supliers </span></a>
+                </li>
+
+
+                <li>
+                    <a href="purchases.php" class="waves-effect"><i class="md md-event"></i><span> Purchases </span></a>
+                </li>
+
+
+
+
+
+                <li class="has_sub">
+                    <a href="#" class="waves-effect"><i class="md md-invert-colors-on"></i><span> Sales</span><span class="pull-right"><i class="md md-add"></i></span></a>
+                    <ul class="list-unstyled">
+                        <li><a href="components-grid.html">Add sales</a></li>
+                        <li><a href="components-portlets.html">Sales Inventory</a></li>
+                        <li><a href="components-widgets.html">Sales Reports</a></li>
+
+                    </ul>
+                </li>
+
+                <li class="has_sub">
+                    <a href="#" class="waves-effect"><i class="md md-redeem"></i> <span>Advance Sales</span> <span class="pull-right"><i class="md md-add"></i></span></a>
+                    <ul class="list-unstyled">
+                        <li><a href="icons-material.html">Add Advance sales</a></li>
+                        <li><a href="icons-ion.html">Advance Records</a></li>
+
+                    </ul>
+                </li>
+
+
+
+                <li class="has_sub">
+                    <a href="#" class="waves-effect"><i class="md md-view-list"></i><span> Tables </span><span class="pull-right"><i class="md md-add"></i></span></a>
+                    <ul class="list-unstyled">
+                        <li><a href="tables-basic.html">Basic Tables</a></li>
+                        <li><a href="tables-datatable.html">Data Table</a></li>
+                        <li><a href="tables-editable.html">Editable Table</a></li>
+                        <li><a href="tables-responsive.html">Responsive Table</a></li>
+                    </ul>
+                </li>
+
+
+
+
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+

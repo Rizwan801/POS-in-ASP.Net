@@ -1,0 +1,241 @@
+﻿
+@{
+    ViewBag.Title = "product";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+// <?php session_start(); ?>
+
+<!-- Mirrored from coderthemes.com/moltran/dark/tables-editable.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Feb 2019 21:45:14 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <title>BISMILLAH Comission Shop</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="assets/images/favicon_1.ico">
+
+    <!-- Plugin Css-->
+    <link rel="stylesheet" href="../plugins/magnific-popup/dist/magnific-popup.css">
+    <link rel="stylesheet" href="../plugins/jquery-datatables-editable/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="../plugins/datatables/responsive.bootstrap4.min.css" />
+    <!-- Custom Files -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <script src="assets/js/modernizr.min.js"></script>
+    <script src="jeffartagame.js" type="text/javascript" charset="utf-8">var table = $('#tech-companies-1').DataTable();
+
+// #myInput is a <input type="text"> element
+$('#filter').on( 'keyup', function () {
+    table.search( this.value ).draw();
+} )</script>
+
+</head>
+
+<body class="fixed-left">
+
+    <!-- Begin page -->
+    <div id="wrapper">
+
+        <!-- Top Bar Start -->
+        <div class="topbar">
+            <!-- LOGO -->
+
+
+
+            <div class="topbar-left">
+                <div class="text-center">
+                    <a href="Dashboard.php" class="logo"><i class="md md-terrain"></i> <span><?php 	echo $_SESSION['SESS_FIRST_NAME'];?></span></a>
+                </div>
+            </div>
+            <!-- Button mobile view to collapse sidebar menu -->
+            // <?php include "nav.php";?>
+        </div>
+        <!-- Top Bar End -->
+        <!-- ========== Left Sidebar Start ========== -->
+        // <?php include 'menu.php'; ?>
+        <!-- Left Sidebar End -->
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="content-page">
+            <!-- Start content -->
+            <div class="content">
+                <div class="container-fluid">
+                    <!-- Page-Title -->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h4 class="pull-left page-title">Products Table</h4>
+                            <ol class="breadcrumb pull-right">
+
+                                <li class="active">Products Table</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="m-b-30">
+                                        <input type="text" style="padding:15px;" name="filter" value="" id="filter" placeholder="Search Product..." autocomplete="off" />
+                                        <a id="" href="addpro.php"><button class="btn btn-success waves-effect waves-light">Add <i class="md md-add-circle-outline"></i></button></a>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="table-rep-plugin">
+                                <div class="table-responsive mb-0" data-pattern="priority-columns">
+                                    <table id="tech-companies-1" class="table table-small-font table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+
+                                                <th>Product Name </th>
+                                                <th> Supplier </th>
+                                                <th> Date Received </th>
+                                                <th> Expiry Date </th>
+                                                <th> Original Price </th>
+                                                <th> Selling Price </th>
+
+                                                <th> Qty Left in kg </th>
+                                                <th> Qty Left in mann </th>
+                                                <th> Total </th>
+                                                <th> Action </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            // <?php
+                                            // function formatMoney($number, $fractional=false) {
+                                            // if ($fractional) {
+                                            // $number = sprintf('%.2f', $number);
+                                            // }
+                                            // while (true) {
+                                            // $replaced = preg_replace('/(-?\d+)(\d\d\d)/', '$1,$2', $number);
+                                            // if ($replaced != $number) {
+                                            // $number = $replaced;
+                                            // } else {
+                                            // break;
+                                            // }
+                                            // }
+                                            // return $number;
+                                            // }
+                                            // include('connect.php');
+                                            // $result = $db->prepare("SELECT *, price * qty as total FROM products ORDER BY product_id DESC");
+                                            // $result->execute();
+                                            // for($i=0; $row = $result->fetch(); $i++){
+                                            // $total=$row['total'];
+                                            // $availableqty=$row['qty'];
+                                            // if ($availableqty < 10) {
+                                            // echo '
+                                            <tr class="alert alert-warning record" style="color: #fff; background:rgb(255, 95, 66);">
+                                                ';
+                                                // }
+                                                // else {
+                                                // echo '
+                                            <tr class="record">
+                                                ';
+                                                // }
+                                                // ?>
+
+
+
+                                                //
+                                                <td><?php echo $row['product_name']; ?></td>
+                                                //
+                                                <td><?php echo $row['supplier']; ?></td>
+                                                //
+                                                <td><?php echo $row['date_arrival']; ?></td>
+                                                //
+                                                <td><?php echo $row['expiry_date']; ?></td>
+                                                //
+                                                <td>
+                                                    <?php
+                                                    // $oprice=$row['o_price'];
+                                                    // echo formatMoney($oprice, true);
+                                                    // ?>
+                                                </td>
+                                                //
+                                                <td>
+                                                    <?php
+                                                    // $pprice=$row['price'];
+                                                    // echo formatMoney($pprice, true);
+                                                    // ?>
+                                                </td>
+
+                                                //
+                                                <td><?php echo $row['qty']; ?></td>
+                                                //
+                                                <td><?php echo $row['qty_mann']; ?></td>
+                                                //
+                                                <td>
+                                                    // <?php
+                                                    // $total=$row['total'];
+                                                    // echo formatMoney($total, true);
+                                                    // ?>
+                                                    //
+                                                </td>
+                                                <td>
+                                                    <a rel="facebox" title="Click to edit the product" href="editproduct.php?id=<?php echo $row['product_id']; ?>"><button class="btn btn-warning"><i class="icon-edit"></i> </button> </a>
+                                                    // <a href="#" id="<?php echo $row['product_id']; ?>" class="delbutton" title="Click to Delete the product"><button class="btn btn-danger"><i class="icon-trash"></i></button></a>
+                                                </td>
+                                                //
+                                            </tr>
+                                            // <?php
+                                            // }
+                                            // ?>
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div> <!-- end card-body -->
+                    </div>
+
+                </div> <!-- container -->
+
+            </div> <!-- content -->
+            // <?php include 'footer.php'; ?>
+
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Right content here -->
+        <!-- ============================================================== -->
+        <!-- Right Sidebar -->
+        <!-- end Modal -->
+
+    </div>
+    <!-- END wrapper -->
+
+    <script>var resizefunc = [];</script>
+    <!-- jQuery  -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/detect.js"></script>
+    <script src="assets/js/fastclick.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/jquery.blockUI.js"></script>
+    <script src="assets/js/waves.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.nicescroll.js"></script>
+    <script src="assets/js/jquery.scrollTo.min.js"></script>
+    <!-- Examples -->
+    <script src="../plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="../plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="../plugins/datatables/dataTables.bootstrap4.min.js"></script>
+    <!-- Responsive examples -->
+    <script src="../plugins/datatables/dataTables.responsive.min.js"></script>
+    <script src="../plugins/datatables/responsive.bootstrap4.min.js"></script>
+    <script src="assets/pages/datatables.editable.init.js"></script>
+
+    <script src="assets/js/jquery.app.js"></script>
+</body>
+<!-- Mirrored from coderthemes.com/moltran/dark/tables-editable.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 Feb 2019 21:45:15 GMT -->
+</html>
+
